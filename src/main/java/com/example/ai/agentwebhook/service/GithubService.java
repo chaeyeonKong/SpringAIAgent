@@ -36,6 +36,4 @@ public class GithubService {
                 .retrieve()
                 .toBodilessEntity(); //결과 내용은 버리고 성공여부만 확인
     }
-
-
 }

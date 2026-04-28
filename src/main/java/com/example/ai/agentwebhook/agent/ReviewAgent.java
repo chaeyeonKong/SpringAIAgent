@@ -60,7 +60,5 @@ public class ReviewAgent {
                 .user(userMsg)
                 .call()
                 .content(); //리뷰 댓글
-
     }
-
 }
