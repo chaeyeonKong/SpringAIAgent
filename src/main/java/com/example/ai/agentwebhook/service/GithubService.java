@@ -27,7 +27,7 @@ public class GithubService {
                 .body(String.class);
     }
 
-    // PR에 댓글달기 (이슈로 다는 것. github는 풀리퀘를 코드가 포함된 이슈라고 생각한다.)
+    // PR에 댓글 달기 (이슈로 다는 것. github는 풀리퀘를 코드가 포함된 이슈라고 생각한다.)
     public void commentOnPr(String owner, String repo, int prNumber, String comment){
         restClient.post()
                 .uri("/repos/{owner}/{repo}/issues/{prNumber}/comments",owner, repo, prNumber)
